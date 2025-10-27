@@ -1,0 +1,141 @@
+# ============================================================
+# Universal Orders Platform — Nx + pnpm Monorepo (.gitignore)
+# Optimized for IntelliJ IDEA / WebStorm / VSCode developers
+# ============================================================
+
+# ------------------------------
+# Core Node / pnpm / Nx
+# ------------------------------
+node_modules/
+dist/
+build/
+.nx/
+.nx-cache/
+.pnpm-store/
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache/
+.project_graph/
+.graph_cache/
+
+# ------------------------------
+# TypeScript / Compilers
+# ------------------------------
+*.tsbuildinfo
+*.d.ts.map
+*.js.map
+*.mjs.map
+*.cjs.map
+
+# ------------------------------
+# IDEs and Editors
+# ------------------------------
+# IntelliJ / WebStorm
+.idea/
+# Optional: keep project code-style and run configs if shared
+!.idea/codeStyles/
+!.idea/runConfigurations/
+
+# VSCode (keep team configs only)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Cursor / JetBrains AI / other assistants
+.nx/agents.json
+.nx/ai.json
+.cursor/
+.history/
+
+# ------------------------------
+# Environment / Secrets
+# ------------------------------
+.env
+.env.*
+!.env.example
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+*.pem
+*.key
+*.crt
+
+# ------------------------------
+# Angular (apps/web)
+# ------------------------------
+apps/web/.angular/
+apps/web/.angular/cache*/
+apps/web/.angular/cache-*
+apps/web/*.log
+
+# ------------------------------
+# Next.js (apps/next)
+# ------------------------------
+apps/next/.next/
+apps/next/out/
+apps/next/.vercel/
+apps/next/.env.local
+
+# ------------------------------
+# NestJS (apps/api)
+# ------------------------------
+apps/api/.nestjs/
+apps/api/dist/
+apps/api/logs/
+apps/api/*.local.json
+
+# ------------------------------
+# Tests & Coverage
+# ------------------------------
+coverage/
+test-results/
+.vitest/
+.vitest-cache/
+jest-html-reporters-*.html
+junit.xml
+
+# ------------------------------
+# Generated Contracts
+# ------------------------------
+packages/contracts/openapi.json
+packages/contracts/dist/
+
+# ------------------------------
+# Infrastructure / AWS CDK
+# ------------------------------
+infra/cdk.out/
+infra/.aws-sam/
+infra/.cdk.staging/
+infra/node_modules/
+infra/dist/
+infra/temp/
+infra/.build/
+cdk.context.json
+cdk.out/
+cdk*.tsbuildinfo
+
+# ------------------------------
+# Miscellaneous
+# ------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.lock
+.lock-wscript
+.envrc
+*.iml
+.idea_modules/
+
+.angular
+
+# Next.js
+.next
+out
